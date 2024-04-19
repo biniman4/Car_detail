@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Page</title>
+    
+    <style>
+        
+        /* page styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a3d2f0;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        ol li:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome to the Help Page</h1>
+        <p>This page provides assistance and support.</p>
+        <h2>Frequently Asked Questions</h2>
+        <ol>
+            <li onclick="alert('Sign in by clicking on the Sign In link at the top right corner of the page.')">How do I sign in?</li>
+            <li onclick="alert('You can register by clicking on the Register link at the top right corner of the page and filling out the required information.')">How can I register for an account?</li>
+            <li onclick="alert('Benefits of registering include access to exclusive content, personalized recommendations, and faster checkout process.')">What are the benefits of registering?</li>
+            <li onclick="alert('You can check your payment status by visiting the Payment History section in your account settings.')">Where can I check my payment status?</li>
+            <li onclick="alert('Our services include X, Y, and Z. For more details, visit our Services page.')">What services do you offer?</li>
+            <li onclick="alert('To schedule a service, simply go to the Schedule page and follow the instructions provided.')">How can I schedule a service?</li>
+        </ol>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Back to Home">Back to Home</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

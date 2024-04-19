@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>har_unv_INFO</title>
+    
+    <style>
+        ul li {
+            margin-left: 10px; 
+        }
+    </style>
+    
+</head>
+<body>
+    <table border="1" width="100%" style="border-collapse:collapse;">
+        <!--  this is header -->
+        <tr>
+            <th style="width: 20%; height: auto;"><img src="image/dt.jpg" /></th>
+            <th  colspan="2"><h1>welcome to haramya universtity</h1></th>
+        </tr>
+        <tr>
+
+          <!-- contuct,home...form -->  
+
+        <td colspan="3">
+            <ul style="display: flex; list-style: none;">
+                <li><a href="#" target="_self">home</a></li>
+                <li><a href="contactus.html">contact us</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+                <li><a href="photography.html">photography</a></li>
+            </ul>
+        </td>    
+        </tr>
+
+
+<!--  this is for log in form -->
+
+<td style="vertical-align: top; width: 20%;">
+    <fieldset>
+        <legend style="color: red;">Login Form</legend>
+
+        <form name="form1" onsubmit="return validateform()" action="cardetail.html" method="get">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="user name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password" style="color:red">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <div style="margin-left:75px ;  margin-bottom :150px;">
+                
+                <!-- Button to submit form -->
+
+                <button type="submit" id="loginButton">Login</button>
+                <button type="reset">Reset</button><br>
+            </div>
+        </form>
+            </fieldset>
+
+          
+        </td>
+
+
+
+        <!-- personal information -->
+        
+        <td rowspan="2" style="vertical-align:top ;">
+            <fieldset>
+                <legend>personal information</legend>
+                
+                <label for="first name">first name</label>
+                <input type="text" id="username" name="firstname"></br>
+                <label for="lastname">lastname</label>
+                <input type="text" id="username" name="lastname"></br>
+                <span>sex
+
+                    <input type="radio" name="gender">
+                    <label name="gender">male</label>
+
+                    <input type="radio" name="gender">
+                    <label>female</label></span></br>
+                    
+
+                <label for="file">photo</label> 
+                <input type="file" id="file" name="browse..">
+            </fieldset>
+            <fieldset>
+                
+        <!-- assesment part -->
+
+                <legend>assesments</legend>
+                <form>
+                    <input type="checkbox" id="quiz" name="quiz" checked>
+                    <label for="quiz">Quiz</label>
+
+                    <input type="checkbox" id="test" name="test">
+                    <label for="test">Test</label>
+
+                    <input type="checkbox" id="assignment" name="assignment">
+                    <label for="assignment">Assignment</label>
+
+                    <input type="checkbox" id="project" name="project">
+                    <label for="project">Project</label>
+
+                    <input type="checkbox" id="final" name="final">
+                    <label for="final">Final</label>
+
+                </form>
+            </fieldset>
+
+            <table border="1" width="100%" style="background-color: lightblue; margin-top: 20px;">
+                <tr>
+                    <th  colspan="6"  style="padding:2px 0;"><p>course assesment information</p></th>
+                </tr>
+                <tr>
+                    <th rowspan="7"  style="background-color: green;">Assignment type</th>
+                    <th  style="width:10%; padding: 10px 0;"></th>
+                    <th>Assignment type</th>
+                    <th>date</th>
+                    <th>Value</th>
+                    <th>Picture</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Quiz</td>
+                    <td>10/08/2018</td>
+                    <td>5%</td>
+                    <td ><a href="cars_images.html"><img src="./image/carA.jpeg" width="50px" height="50px"></a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Test</td>
+                    <td>15/08/2018</td>
+                    <td>15%</td>
+                    <td ><a href="cars_images.html"><img src="./image/carB.jpeg"  width="50px" height="50px"></a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Assignment</td>
+                    <td>18/08/2018</td>
+                    <td>10%</td>
+                    <td ><a href="cars_images.html"><img src="./image/carB.jpeg"  width="50px" height="50px"></a></td>
+                </tr>
+                
+                <tr>
+                    <td>4</td>
+                    <td>Project</td>
+                    <td>28/08/2018</td>
+                    <td>20%</td>
+                    <td ><a href="cars_images.html"><img src="./image/carB.jpeg"  width="50px" height="50px"></a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>final</td>
+                    <td>10/09/2018</td>
+                    <td>50%</td>
+                    <td ><a href="cars_images.html"><img src="./image/carB.jpeg"  width="50px" height="50px"></a></td>
+                </tr>
+                <tr >
+                   <th colspan="6" style="padding: 20px 0;">GOOD LUCK!!!</th>
+                </tr>
+
+
+            </table>
+
+
+
+
+        </td>
+        <td style="width:200px; vertical-align: top; list-style: none;">
+              
+            <li><a href="announcement.html">announcement</a></li>
+            <li><a href="advertize.html">advertize</a></li>
+            <li><a href="help.html">help</a></li>
+            <li><a href="comment.html">comment</a></li>
+            <img style=" width:100%; padding: 20px 0;"src="./image/car.jpeg"/>
+    </td>
+    <tr>
+        <td>
+            <div class="car">
+            <img style=" width:100%; padding: 30px 0;" src="./image/car.jpeg" alt="car"  id="image1"
+              onclick="replace()" onmouseover="mouseover()" onmouseout="mouseout()">
+              <h1 id="para"></h1>
+            </div>
+        </td>
+
+        <td style="vertical-align: top;">
+          <h1>assesment</h1>
+          
+          <select id="activitySelect">
+            <option value="quiz" >Quiz</option>
+            <option value="test">Test</option>
+            <option value="assignment">Assignment</option>
+            <option value="project">Project</option>
+            <option value="final">Final</option>
+        </select>
+        
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3" style="background-color: silver; text-align: center;padding: 5px;">copyright@  cr 3rd year student Biniyam Birhanu</td>
+    </tr>
+</table>
+
+<script src="script.js"></script>    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Comment Page">
+    <meta name="keywords" content="comment, feedback, discussion">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Page</title>
+   
+    <style>
+        
+        /* Inline CSS for demonstration purposes */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a3d2f0; 
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            color: #666;
+            text-align: center;
+            margin-bottom: 40px; 
+        }
+
+        
+        /* Styles for the textarea */
+
+        textarea {
+            width: 80%;
+            height: 200px;
+            margin: 20px auto;
+            display: block;
+            resize: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px; 
+            background-color: #fff; 
+        }
+
+        
+        /* Styles for the buttons */
+
+        .button-container {
+            text-align: center;
+        }
+
+        button {
+            padding: 8px 16px;
+            border-radius: 5px;
+            background-color: #007bff; 
+            color: #fff; 
+            border: none;
+            cursor: pointer;
+            margin-right: 10px; 
+        }
+
+        button:hover {
+            background-color: #0056b3; 
+        }
+
+        /* Styles for the message */
+        
+        #message {
+            text-align: center;
+            color: green; 
+            margin-top: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to the Comment Page</h2>
+    <p>This page allows you to leave comments, feedback, or engage in discussions.</p>
+    
+    <!-- Textarea for leaving comments -->
+    <textarea name="comment" id="comment" placeholder="Leave your comment here..."></textarea>
+
+    <!-- Buttons container -->
+    <div class="button-container">
+        <button onclick="submitComment()">Submit</button>
+        <a href="index.html" title="Back to Home"><button>Back to Home</button></a>
+    </div>
+
+    <!-- Message -->
+    <div id="message"></div>
+
+    <script>
+        function submitComment() {
+            var comment = document.getElementById("comment").value;
+            if (comment.trim() === "") {
+                alert("Please enter a comment before submitting.");
+            } else {
+                
+                // For demonstration purposes, we'll just display a message
+                document.getElementById("message").innerText = "Comment sent!";
+            }
+        }
+    </script>
+</body>
+</html>

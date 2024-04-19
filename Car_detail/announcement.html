@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements</title>
+    
+     <!-- page styles -->
+     
+    <style>
+        
+        
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a3d2f0; 
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .announcement {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .announcement h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .announcement p {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Announcements</h1>
+        
+        <!-- Announcement Form (for administrators) -->
+        <form id="announcementForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Post Announcement">
+        </form>
+
+        <!-- Recent Announcements Section -->
+
+        <div class="announcement">
+            <h2>Recent Announcements</h2>
+            <p>No recent announcements at the moment.</p>
+        </div>
+
+        <!-- Subscribe for Notifications (for users) -->
+
+        <form id="subscribeForm">
+            <label for="email">Subscribe for Notifications:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+           
+            // Subscribe Form
+
+            document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert('Thanks for subscription!');
+                
+            });
+
+           
+            // Announcement Form
+
+            document.getElementById('announcementForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert('Your announcement analyzed and will be posted. Please wait.');
+                
+            });
+        });
+    </script>
+     <footer>
+        <nav>
+            
+                <a href="index.html" title="Back to Home">Back to Home</a>
+            
+        </nav>
+    </footer>
+</body>
+</html>

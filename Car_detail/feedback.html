@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK</title>
+
+    <!-- sttyle of page -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a3d2f0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+        }
+        li {
+            margin-right: 20px;
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback</h1>
+    <p>We value your feedback. Please feel free to share your thoughts, suggestions, or concerns with us.</p>
+
+    <form id="feedbackForm" action="submit_feedback.php" method="post">
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <ul>
+        <li><a href="index.html">Back to home</a></li>
+    </ul>
+
+    <!--script  -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert('We have received your feedback. Thank you!');
+                
+            });
+        });
+    </script>
+</body>
+</html>
